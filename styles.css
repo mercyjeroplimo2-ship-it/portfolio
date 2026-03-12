@@ -1,0 +1,182 @@
+/* Reset some default browser styles */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body styling */
+body{
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem;
+    line-height: 1.6;
+    color:#333;
+    background:#fafafa;
+}
+
+/* Header */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:3rem;
+}
+
+/* Logo */
+.logo{
+    font-weight:bold;
+    font-size:1.3rem;
+    letter-spacing:2px;
+    color:#111;
+}
+
+/* Navigation links */
+nav a{
+    text-decoration:none;
+    margin-left:1.5rem;
+    color:#444;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#0077ff;
+}
+
+/* Hero section */
+.hero-container{
+    display:flex;
+    align-items:center;
+    gap:3rem;
+    margin-bottom:4rem;
+}
+
+/* Profile image */
+.profile-img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    box-shadow:0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* Hero text */
+.hero-text h1{
+    font-size:2.4rem;
+    margin-bottom:1rem;
+}
+
+.hero-text p{
+    color:#555;
+}
+
+/* Button */
+.btn{
+    display:inline-block;
+    margin-top:1rem;
+    padding:10px 20px;
+    background:#0077ff;
+    color:white;
+    border-radius:6px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#005edb;
+}
+
+/* Work section */
+#work{
+    margin-top:3rem;
+}
+
+/* Projects grid */
+.project-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:2rem;
+    margin-top:1.5rem;
+}
+
+/* Project cards */
+.project-card{
+    background:white;
+    border-radius:10px;
+    padding:1.5rem;
+    border:1px solid #eee;
+    transition:0.3s;
+}
+
+/* Card hover effect */
+.project-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 8px 18px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer{
+    margin-top:4rem;
+    border-top:1px solid #ddd;
+    padding-top:2rem;
+}
+
+/* Social links */
+.social-links{
+    margin-top:1rem;
+}
+
+.social-links a{
+    text-decoration:none;
+    margin-right:10px;
+    padding:8px 14px;
+    border-radius:5px;
+    font-size:14px;
+    color:white;
+}
+
+/* Social colors */
+.social-links a:nth-child(1){
+    background:#1877f2;
+}
+
+.social-links a:nth-child(2){
+    background:#333;
+}
+
+.social-links a:nth-child(3){
+    background:#0a66c2;
+}
+
+/* Hover effect */
+.social-links a:hover{
+    opacity:0.8;
+}
+
+/* Copyright */
+.copyright{
+    font-size:0.8rem;
+    color:#777;
+    margin-top:2rem;
+}
+
+/* Responsive design */
+@media(max-width:700px){
+
+.hero-container{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+.project-grid{
+    grid-template-columns:1fr;
+}
+
+header{
+    flex-direction:column;
+    gap:1rem;
+}
+
+}
